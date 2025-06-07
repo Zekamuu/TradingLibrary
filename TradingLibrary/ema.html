@@ -1,0 +1,82 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Popup tab styles */
+        #sidePopup {
+            position: fixed;
+            top: 50%;
+            left: -295px;
+            transform: translateY(-50%);
+            width: 250px;
+            background: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            transition: ease 0.3s;
+            z-index: 1000;
+            padding: 20px;
+        }
+        #sidePopup.open {
+            left: 0;
+        }
+        #popupTab {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 0 5px 5px 0;
+            z-index: 1001;
+        }
+        #closePopup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Home page</h1>
+    <br>
+    <h3>Lorem ipsum idk</h3>
+    <div id="popupTab">&gt</div>
+    <div id="sidePopup">
+        <button id="closePopup">&times;</button>
+        <h2>Indicators</h2>
+        <p></p>
+        <button id="Simple Moving Average" onclick="window.location.href='sma.html'">Simple Moving Average</button>
+        <br>
+        <button id="Exponential Moving Average" onclick="window.location.href='ema.html'">Exponential Moving Average</button>
+        <br>
+        <h2>Backtesting</h2>
+        <button id="Backtesting">Backtesting</button>
+        <br>
+        <h2>Strategies</h2>
+        <button id="My Strategies">My Strategies</button>
+        <button id="Strategies Library">
+    </div>
+    <script>
+        const popupTab = document.getElementById('popupTab');
+        const sidePopup = document.getElementById('sidePopup');
+        const closePopup = document.getElementById('closePopup');
+
+        popupTab.onclick = () => {
+            sidePopup.classList.add('open');
+            popupTab.style.display = 'none';
+        };
+        closePopup.onclick = () => {
+            sidePopup.classList.remove('open');
+            popupTab.style.display = 'block';
+        };
+    </script>
+</body>

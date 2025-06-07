@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu-bar" class = "menu-bar">
+        <div id="menuButton" style="margin-left: 20px; cursor: pointer;">
+            <img src="images/588a6507d06f6719692a2d15.png" class="menu">
+        </div>
+    </div>
+    <br style="line-height:60px;">
+    <br>
+    <h1 style="margin-top: 50px;">Backtesting page</h1>
+    <br>
+    <h3>Here you can test out your own strategies</h3>
+    
+
+
+    <div id="sidePopup" class="sidePopup">
+
+            <div id="Home">
+                <h2>Home</h2>
+                <button id="home" onclick="window.location.href='home.html'">Home</button>
+            </div>
+
+
+            <div id="Indicators">
+                <h2>Indicators</h2>
+                <p></p>
+                <button id="Simple Moving Average" onclick="window.location.href='sma.html'">Simple Moving Average</button>
+                <br>
+                <button id="Exponential Moving Average" onclick="window.location.href='ema.html'">Exponential Moving Average</button>
+                <br>
+            </div>
+
+            <div id="Strategies">
+                <h2>Strategies</h2>
+                <button id="My Strategies">My Strategies</button>
+                <button id="Strategies Library"></button>
+            </div>
+
+    </div>
+
+    <button id="create-strategy">Create Strategy</button>
+
+
+    <div id="strategy-menu">
+        <button id="strategy-menu-close-btn">&times;</button>
+        <h1>Strategy</h1>
+        <div id="add-indicator" class="add-indicator">
+            <button id="add-indicator-button">
+                +Add Indicators
+            </button>
+        </div>
+    </div>
+
+    <div id="add-indicator-menu" style="top: 50%; left: 50%">
+        <!-- <button id="abcd">Select Indicator</button> -->
+    </div>
+
+    
+    <script src="bt.js"></script>
+</body>
+</html>

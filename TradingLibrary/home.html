@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu-bar" class = "menu-bar">
+        <div id="menuButton" style="margin-left: 20px; cursor: pointer;">
+            <img src="images/588a6507d06f6719692a2d15.png" class="menu">
+        </div>
+    </div>
+    <br style="line-height:60px;">
+    <br>
+    <h1 style="margin-top: 50px;">Home page</h1>
+    <br>
+    <h3>Lorem ipsum idk</h3>
+    <h3></h3>
+
+
+    <div id="sidePopup" class="sidePopup">
+
+            <div id="Indicators">
+                <h2>Indicators</h2>
+                <p></p>
+                <button id="Simple Moving Average" onclick="window.location.href='sma.html'">Simple Moving Average</button>
+                <br>
+                <button id="Exponential Moving Average" onclick="window.location.href='ema.html'">Exponential Moving Average</button>
+                <br>
+            </div>
+            <div id="Backtesting">
+                <h2>Backtesting</h2>
+                <button id="Backtesting" onclick="window.location.href='bt.html'">Backtesting</button>
+                <br>
+            </div>
+            <div id="Strategies">
+                <h2>Strategies</h2>
+                <button id="My Strategies">My Strategies</button>
+                <button id="Strategies Library"></button>
+            </div>
+
+    </div>
+
+    <script>
+        const sidePopup = document.getElementById('sidePopup');
+        const menu = document.getElementById('menuButton');
+
+
+        menu.onmouseover = () => {
+            menu.classList.add('hover');
+        }
+
+        menu.onclick = () => {
+
+            if(sidePopup.classList.contains('open')){
+                sidePopup.classList.remove('open');
+            }
+            else{
+                sidePopup.classList.add('open');
+            }
+            popupTab.style.display='none';
+
+
+        }
+
+        closePopup.onclick = () => {
+            
+            popupTab.style.display = 'block';
+        };
+    </script>
+</body>
+</html>
