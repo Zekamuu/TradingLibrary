@@ -11,7 +11,7 @@
             left: -295px;
             transform: translateY(-50%);
             width: 250px;
-            background: #fff;
+            background: rgb(27, 27, 27);
             border: 1px solid #ccc;
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
             transition: ease 0.3s;
@@ -46,12 +46,13 @@
 </head>
 
 <body>
-    <h1>Home page</h1>
+    <h1>Exponential Moving Average</h1>
     <br>
-    <h3>Lorem ipsum idk</h3>
+    <h3>Moving average weighted more towards the latest prices</h3>
     <div id="popupTab">&gt</div>
     <div id="sidePopup">
         <button id="closePopup">&times;</button>
+        <button id="home" onclick="window.location.href='home.html'">Home</button>
         <h2>Indicators</h2>
         <p></p>
         <button id="Simple Moving Average" onclick="window.location.href='sma.html'">Simple Moving Average</button>

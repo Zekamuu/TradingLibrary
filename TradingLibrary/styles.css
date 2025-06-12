@@ -92,3 +92,35 @@
 
 }
 
+#add-indicator-menu{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-width: 90vw;
+    min-height: 200px;
+    background-color: rgb(50,50,50);
+    display: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(14, 14, 14, 0.3);
+    padding: 24px;
+    z-index: 6;
+}
+#add-indicator-menu.open{
+    display: block;
+}
+
+#candles-back{
+    display: none;
+}
+#candles-back.open{
+    display: block;
+}
+#indicator-done-button{
+    display: none;
+}
+#indicator-done-button.show{
+    display: block;
+    cursor: pointer;
+}

@@ -52,14 +52,39 @@
         <button id="strategy-menu-close-btn">&times;</button>
         <h1>Strategy</h1>
         <div id="add-indicator" class="add-indicator">
-            <button id="add-indicator-button">
-                +Add Indicators
-            </button>
+            <!-- <select id="add-indicator-dropdown">
+                <option value="">+Add Indicators</option>
+                <option value="sma">Simple Moving Average</option>
+                <option value="ema">Exponential Moving Average</option>
+
+            </select> -->
+            <button id="add-indicator-button">Add Indicator</button>
+           
         </div>
+        <select id="action">
+            <option value="">Select condition</option>
+            <option value="cross-up">Crosses Above</option>
+            <option value="cross-down">Crosses Under</option>
+        </select>
     </div>
 
     <div id="add-indicator-menu" style="top: 50%; left: 50%">
-        <!-- <button id="abcd">Select Indicator</button> -->
+        <div id="close-indicator-menu" style="position: absolute; top: 10px; right: 10px; cursor: pointer;">&times;</div>
+        <div id="indicator-config">
+            Add Indicator
+            <br>
+            <select id="indicator">
+                <option value="">Select Indicator</option>
+                <option value="sma">Simple Moving Average</option>
+                <option value="ema">Exponential Moving Average</option>
+            </select>
+            <br>
+            <div id="candles-back">
+                Enter candles back:
+                <input type="number" id="indicator-value" name="indicator-value" min="1" step="1">
+            </div>
+            <button id="indicator-done-button">Done</button>
+        </div>
     </div>
 
     
